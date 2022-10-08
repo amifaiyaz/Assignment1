@@ -1,0 +1,22 @@
+/*Name:Faiyaz Muhammad
+Student id: 301227442
+Date: october 7th 2022*/
+
+.services-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.services-cont img{
+    width: 100px;
+    height: 100px;
+}
+p{
+    width: 400px;
+}
+.b{
+    background-image: linear-gradient(to top,#5614B0,#DBD65C);
+    background-image: 100%;
+}

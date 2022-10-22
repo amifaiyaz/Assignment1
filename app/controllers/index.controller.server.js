@@ -2,26 +2,24 @@
 Student id: 301227442
 Date: october 7th 2022*/
 
-export function displayHomePage(req, res, next){
-    res.render('index', { title: 'Home', page: 'home' });
+import { UserDisplayName } from "../utils/index.js";
+
+export function displayHomePage(req, res, next) {
+    res.render('index', { title: 'Home', page: 'home', displayName: UserDisplayName(req)} );
 };
 
 export function displayAboutPage(req, res, next) {
-    res.render('index', {title: 'About', page: 'about'});
-}
-
-export function displayContactPage(req, res, next) {
-    res.render('index', {title: 'Contact', page: 'contact'});
-}
+    res.render('index', { title: 'About', page: 'about', displayName: UserDisplayName(req)} );
+};
 
 export function displayProjectsPage(req, res, next) {
-    res.render('index', {title: 'Projects', page: 'projects'});
-}
+    res.render('index', { title: 'Projects', page: 'projects', displayName: UserDisplayName(req)} );
+};
 
 export function displayServicesPage(req, res, next) {
-    res.render('index', {title: 'Services', page: 'services'});
-}
+    res.render('index', { title: 'Services', page: 'services', displayName: UserDisplayName(req)} );
+};
 
-export function displayExtrasPage (req, res, next){
-    res.render('index', {title: 'Extras', page: 'extras'} )
-}
+export function displayContactPage(req, res, next) {
+    res.render('index', { title: 'Contact', page: 'contact', displayName: UserDisplayName(req)} );
+};

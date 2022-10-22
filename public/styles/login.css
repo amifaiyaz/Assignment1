@@ -1,0 +1,30 @@
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #008ffd,#d7d2cc);  
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+/* Login button */
+.btn-login {
+    color: #ffffff;
+    background-color: #8BBCCC;
+    border-style: none;
+}
+
+.btn-login:hover,
+.btn-login:focus {
+    background-color: #1381a5;
+}
+
+/* Cancel button */
+.btn-cancel {
+    color: #ffffff;
+    border-style: none;
+}

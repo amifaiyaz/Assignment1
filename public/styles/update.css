@@ -1,0 +1,51 @@
+body {
+    min-height: 100vh; 
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Buttons */
+/* Submit button */
+.btn-submit {
+    color: #ffffff;
+    background-color: #4C6793;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 15px 17px;
+    margin-top: 30px;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: #82a9e7;
+    transform: scale(1.1);
+}
+
+/* Cancel button */
+.btn-cancel {
+    color: #ffffff;
+    background-color: #d27723;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 15px 17px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus {
+    background-color: #c49055;
+    transform: scale(1.1);
+}

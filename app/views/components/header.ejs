@@ -4,7 +4,7 @@ Student id: 301227442
 Date: october 7th 2022*/
 -->
 
-<link rel="stylesheet" href="./content/css/navbar.css">
+<link rel="stylesheet" href="./styles/navbar.css">
 <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" href="/"><img src="./content/images/logo.png" style="height:55px; padding-bottom: 3px;"/>Faiyaz</a>
@@ -30,9 +30,27 @@ Date: october 7th 2022*/
           </li>
   
           <li class="nav-item">
-            <a class="nav-link <%= (page == 'contact') ? 'active' : ''; %>" aria-current="page" href="/contact"><i class="fa-solid fa-envelopes-bulk fa-lg"></i> Contact</a>
+            <a class="nav-link <%= (page == 'contacts-list') ? 'active' : ''; %>" aria-current="page" href="/contact"><i class="fa-solid fa-envelopes-bulk fa-lg"></i> Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link <%= (page == 'contacts-list') ? 'active' : ''; %>" aria-current="page" href="/contacts-list"><i class="fa-solid fa-table-list fa-lg"></i> Contacts List</a>
           </li> 
-    
+          
+          <% if(displayName) { %>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/logout"><i class="fa-solid fa-right-from-bracket fa-lg"></i> Logout</a>
+          </li>
+          
+          <% } else { %>
+          
+          <li class="nav-item">
+            <a class="nav-link <%= (page == 'login') ? 'active' : ''; %>" aria-current="page" href="/login"><i class="fa-solid fa-right-to-bracket fa-lg"></i> Login</a>
+          </li>
+          
+          <% } %>
+        </ul>
         </ul>
       </div>
     </div>
